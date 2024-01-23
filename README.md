@@ -1,5 +1,3 @@
--->
-
 # Projeto API NestJS com TypeORM
 
 Este projeto consiste em uma API desenvolvida para o cadastro de cursos, empregando as tecnologias do framework NestJS e do TypeORM. Além disso, é integrado com a ferramenta Swagger para oferecer documentação automática, proporcionando uma experiência mais eficiente e transparente na exploração e compreensão dos endpoints da API.
