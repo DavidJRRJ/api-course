@@ -1,12 +1,22 @@
-import { IsString } from "class-validator"
+import { IsString } from 'class-validator';
+import { ApiProperty } from '@nestjs/swagger';
 
 export class CreateCourseDTO {
-    @IsString()
-    readonly name: string
+  @ApiProperty({
+    description: 'Nome do curso',
+  })
+  @IsString()
+  readonly name: string;
 
-    @IsString()
-    readonly description: string
+  @ApiProperty({
+    description: 'Descrição do curso',
+  })
+  @IsString()
+  readonly description: string;
 
-    @IsString({ each: true })
-    readonly tags: string[]
+  @ApiProperty({
+    description: 'Conteúdos contidos no curso',
+  })
+  @IsString({ each: true })
+  readonly tags: string[];
 }
